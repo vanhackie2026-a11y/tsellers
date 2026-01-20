@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skyshop</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+        <div class="topnav">
+          <div class="logo">
+  <svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <text x="0" y="30"
+        font-family="Inter, Arial, sans-serif"
+        font-size="32"
+        font-weight="700"
+        fill="#2563EB">
+    V
+    </text>
+
+  <!-- O -->
+  <circle cx="50" cy="20" r="14" stroke="#2563EB" stroke-width="4" fill="none"/>
+  <circle cx="50" cy="20" r="4" fill="#2563EB"/>
+
+  <text x="75" y="30"
+        font-family="Inter, Arial, sans-serif"
+        font-size="32"
+        font-weight="700"
+        fill="#2563EB">
+    X
+  </text>
+</svg>
+
+</div>
+
+                <a class="active" href="#home">Home</a>
+      <a class="account" href="#my account">My Account</a>
+      <a  class="bag" href="#cart">Cart</a>
+      <div class="details">
+      <button onclick="showForm()" style="width:auto;">Sign Up</button>
+ <div id="signupForm" class="form-container">
+  <form class="modal-content" action="/action_page.php" id="formBox">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our 
+        <a href="#" style="color:dodgerblue">Terms & Privacy</a>.
+      </p>
+
+      <div class="clearfix">
+        <button type="button" onclick="hideForm()" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<button onclick="showLoginForm()" style="width:auto;">Log in</button>
+
+<div id="loginForm" class="form-container">
+  <form class="modal-content animate" action="/action_page.php" method="post" id="formBox">
+    <div class="imgcontainer">
+      <span onclick="hideLoginForm()" class="close" title="Close Modal">&times;</span>
+      <img src="kitchen2.jpg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1; display: flex; justify-content: space-between; align-items: center;">
+      <button type="button" onclick="hideLoginForm()" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot</span><a href="#">password?</a>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
+  <!-- Search bar -->
+  <div class="search-wrapper">
+    <form class="search-bar">
+      <svg viewBox="0 0 24 24">
+        <path d="M10 2a8 8 0 105.293 14.707l5 5 1.414-1.414-5-5A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"/>
+      </svg>
+      <input type="text" placeholder="Search..." />
+    </form>
+  </div>
+<div class="middlenav">
+  <div class="dropdown">
+    <a href="#cars">Cars</a>
+    <div class="dropdown-content">
+      <div class="links">
+              <a href="#top cars" style="text-decoration: underline; color: rgb(73, 70, 70);">Top cars</a>
+               <a href="#bmw">BMW</a>
+        <a href="#subaru">Subaru</a>
+        <a href="#rangerover">Range rover</a>
+        <a href="#toyota">Toyota</a>
+        <a href="#isuzu">Isuzu</a>
+      </div>
+            <div class="links">
+              <a href="#spare parts" style="text-decoration: underline; color: rgb(73, 70, 70);">spares and parts</a>
+        <a href="#subaru">Subaru</a>
+        <a href="#rangerover">Range rover</a>
+        <a href="#toyota">Toyota</a>
+        <a href="#isuzu">Isuzu</a>
+      </div>
+       
+      <div class="image">
+        <div class="picture" style="background-color: yellow;">
+        <img src="car2.jpg" alt="my dream car" style="width: 400px; height: 300px; border-radius: 5px; margin-top: 10px; float: right; margin-right: 15px; cursor: pointer;">
+        </div>
+         <p style="font-size: 25px; color: #666; cursor: pointer;">Get your dream car
+          && Travel at your comfort!
+        </p> 
+      <div class="dropbtn">
+       
+        <button  style="background-color: #ff6f00;font-size: 20px; width: 175px; font-weight: 400;">Shop Now <span>&#8594;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="dropdown">
+    <a href="#electronics">Electronics</a>
+    <div class="dropdown-content">
+      <div class="links">
+              <a href="#top collections" style="text-decoration: underline; color: rgb(73, 70, 70);"> Top collections</a>
+              <a href="#camera and photo"> camera and photo</a>
+        <a href="#pads and video games">pads and video games</a>
+        <a href="#cell phones and smartphones">cell phones and smartphones</a>
+        <a href="#laptops">laptops</a>
+        <a href="#tablets and ipads">tablets and  ipads</a>
+        <a href="#home audios">home audios</a>
+      </div>
+       <div class="links">
+              <a href="#additional and parts" style="text-decoration: underline; color: rgb(73, 70, 70);">Additional and parts</a>
+              <a href="#camera and photo"> camera and photo</a>
+        <a href="#pads and video games">pads and video games</a>
+        <a href="#cell phones and smartphones">cell phones and smartphones</a>
+        <a href="#laptops">laptops</a>
+        <a href="#tablets and ipads">tablets and  ipads</a>
+        <a href="#home audios">home audios</a>
+      </div>
+      <div class="image">
+        <div class="picture">
+        <img src="phone1.png" alt="my dream car" style="width: 400px; height: 300px; border-radius: 5px; margin-top: 10px; float: right; margin-right: 15px; cursor: pointer;">
+        </div>
+         <p style="font-size: 25px; color: #666; cursor: pointer;">Opening the world through technology
+        </p> 
+      <div class="dropbtn">
+       
+        <button style="background-color: #ff6f00;font-size: 20px; width: 175px; font-weight: 400;">Shop Now <span>&#8594;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="dropdown">
+    <a href="#home and garden">Home and garden</a>
+    <div class="dropdown-content">
+      <div class="links">
+        <a href="#primary equipments" style="text-decoration: underline; color: rgb(73, 70, 70);">Primary equipments</a>
+              <a href="#flowers and flower bases">flowers and flower bases</a>
+        <a href="#bedroom decos and beds">bedroom decos and beds</a>
+        <a href="#lightings and audios">lightings and audios</a>
+        <a href="#curtains and beddings">Curtains and beddings</a>
+        <a href="#kitchen equipments">Kitchen equipments</a>
+      </div>
+             <div class="links">
+        <a href="#primary equipments" style="text-decoration: underline; color: rgb(73, 70, 70);">Primary equipments</a>
+              <a href="#flowers and flower bases">flowers and flower bases</a>
+        <a href="#bedroom decos and beds">bedroom decos and beds</a>
+        <a href="#lightings and audios">lightings and audios</a>
+        <a href="#curtains and beddings">Curtains and beddings</a>
+        <a href="#kitchen equipments">Kitchen equipments</a>
+      </div>
+      <div class="image">
+        <div class="picture" style="background-color: yellow;">
+        <img src="house3.jpg" alt="my dream car" style="width: 400px; height: 300px; border-radius: 5px; margin-top: 10px; float: right; margin-right: 15px; cursor: pointer;">
+        </div>
+         <p style="font-size: 25px; color: #666; cursor: pointer;">Home sweet home
+        </p> 
+      <div class="dropbtn">
+       
+        <button style="background-color: #ff6f00;font-size: 20px; width: 175px; font-weight: 400;">Shop Now <span>&#8594;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="dropdown">
+    <a href="#clothes and shoes">clothes and shoes</a>
+    <div class="dropdown-content">
+      <div class="links">
+              <a href="#men outfits" style="text-decoration: underline; color: rgb(73, 70, 70);">Men outfits</a>
+        <a href="#suits">Suits</a>
+        <a href="#jeans and dynims">Jeans and dynims</a>
+        <a href="#offfice shoes">office shoes</a>
+        <a href="#sketchers and rubbers">sketchers and rubbers</a>
+        <a href="#hoddies and jackets">Hoddies and jackets</a>
+        <a href="#caps and belts">Caps and belts</a>
+      </div>
+             <div class="links">
+              <a href="#women outfits" style="text-decoration: underline; color: rgb(73, 70, 70);">Women outfits</a>
+        <a href="#suits">Suits</a>
+        <a href="#jeans and dynims">Jeans and dynims</a>
+        <a href="#offfice shoes">office shoes</a>
+        <a href="#sketchers and rubbers">sketchers and rubbers</a>
+        <a href="#hoddies and jackets">Hoddies and jackets</a>
+        <a href="#caps and belts">Caps and belts</a>
+      </div>
+      <div class="image">
+        <div class="picture" style="background-color: yellow;">
+        <img src="cloths3.jpg" alt="my dream car" style="width: 400px; height: 300px; border-radius: 5px; margin-top: 10px; float: right; margin-right: 15px; cursor: pointer;">
+        </div>
+         <p style="font-size: 25px; color: #666; cursor: pointer;">Get the trending outfits in our store
+        </p> 
+      <div class="dropbtn">
+       
+        <button style="background-color: #ff6f00;font-size: 20px; width: 175px; font-weight: 400;">Shop Now <span>&#8594;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="dropdown">
+    <a href="#business and industrial">Business and industrial</a>
+    <div class="dropdown-content">
+      <div class="links">
+        <a href="#top categories" style="text-decoration: underline; color: rgb(73, 70, 70);">Top categories</a>
+        <a href="#hotels and airbnbs">Hotels and Airbnbs</a>
+        <a href="#foods and foods staffs">Foods and foods staffs</a>
+        <a href="#farming and agriculture">Farming and agriculture</a>
+      </div>
+            <div class="links">
+        <a href="#additional categories" style="text-decoration: underline; color: rgb(73, 70, 70);">Additional categories</a>
+        <a href="#hotels and airbnbs">Hotels and Airbnbs</a>
+        <a href="#foods and foods staffs">Foods and foods staffs</a>
+        <a href="#farming and agriculture">Farming and agriculture</a>
+      </div> 
+      <div class="image">
+        <div class="picture" style="background-color: yellow;">
+        <img src="car2.jpg" alt="my dream car" style="width: 400px; height: 300px; border-radius: 5px; margin-top: 10px; float: right; margin-right: 15px; cursor: pointer;">
+        </div>
+         <p style="font-size: 25px; color: #666; cursor: pointer;">Get. our goods & services 
+        </p> 
+      <div class="dropbtn">
+       
+        <button style="background-color: #ff6f00;font-size: 20px; width: 175px; font-weight: 400;">Shop Now <span>&#8594;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="dropdown">
+    <a href="#jewelry and watches">Jewelry and watches</a>
+    <div class="dropdown-content">
+      <div class="links">
+        <a href="#top categories" style="text-decoration: underline; color: rgb(73, 70, 70);">Top categories</a>
+              <a href="#neclklaces">Nacklaces</a>
+        <a href="#bangles and bracelets">Bangles and bracelets</a>
+        <a href="#watches">watches</a>
+        <a href="#wedding rings">wedding rings</a>
+        <a href="#home vessels">Home vessels</a>
+      </div>
+       <div class="links">
+        <a href="#additional categories" style="text-decoration: underline; color: rgb(73, 70, 70);">Additional categories</a>
+              <a href="#neclklaces">Nacklaces</a>
+        <a href="#bangles and bracelets">Bangles and bracelets</a>
+        <a href="#watches">watches</a>
+        <a href="#wedding rings">wedding rings</a>
+        <a href="#home vessels">Home vessels</a>
+      </div>
+      <div class="image">
+        <div class="picture" style="background-color: yellow;">
+        <img src="car2.jpg" alt="my dream car" style="width: 400px; height: 300px; border-radius: 5px; margin-top: 10px; float: right; margin-right: 15px; cursor: pointer;">
+        </div>
+         <p style="font-size: 25px; color: #666; cursor: pointer;">Limited collections in our stores
+        </p> 
+      <div class="dropbtn">
+       
+        <button style="background-color: #ff6f00;font-size: 20px; width: 175px; font-weight: 400;">Shop Now <span>&#8594;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+   <div class="dropdown">
+    <a href="#services and experts">services and experts</a>
+    <div class="dropdown-content">
+      <div class="links">
+        <a href="#major services" style="text-decoration: underline; color: rgb(73, 70, 70);">Major services</a>
+              <a href="#neclklaces">Nacklaces</a>
+        <a href="#bangles and bracelets">Bangles and bracelets</a>
+        <a href="#watches">watches</a>
+        <a href="#wedding rings">wedding rings</a>
+        <a href="#home vessels">Home vessels</a>
+      </div>
+       <div class="links">
+        <a href="#minor services" style="text-decoration: underline; color: rgb(73, 70, 70);">Minor services</a>
+              <a href="#neclklaces">Nacklaces</a>
+        <a href="#bangles and bracelets">Bangles and bracelets</a>
+        <a href="#watches">watches</a>
+        <a href="#wedding rings">wedding rings</a>
+        <a href="#home vessels">Home vessels</a>
+      </div>
+      <div class="image">
+        <div class="picture" style="background-color: yellow;">
+        <img src="car2.jpg" alt="my dream car" style="width: 400px; height: 300px; border-radius: 5px; margin-top: 10px; float: right; margin-right: 15px; cursor: pointer;">
+        </div>
+         <p style="font-size: 25px; color: #666; cursor: pointer;">Click to get an expert
+        </p> 
+      <div class="dropbtn">
+       
+        <button style="background-color: #ff6f00;font-size: 20px; width: 175px; font-weight: 400;">Get Now <span>&#8594;</span>
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="slideshow-container">
+        <div class="slides-wrapper" id="slidesWrapper">
+    <div class="slide" style="background-color: #ff6f00; border-radius: none">
+      <a class="link" href="#" >got to our store</a>
+      <img src="kitchen3.jpg" alt="Slide 1">
+    </div>
+    <div class="slide" style="background-color: #45696b; border-radius: none">
+      <img src="jewellery1.jpg" alt="Slide 2">
+    </div>
+          <div class="slide" style="background-color: #ff00ea; border-radius: none">
+      <img src="house2.jpg" alt="Slide 3">
+    </div>
+    <div class="slide" style="background-color: #00ffea; border-radius: none">
+      <img src="watch3.jpg" alt="Slide 4">
+      </div>
+    <div class="slide" style="background-color: #00ff6a; border-radius: none">
+      <img src="car3.jpg" alt="Slide 5">
+    </div>
+    <!-- Clone first slide for seamless loop -->
+    <div class="slide" style="background-color: #ff6f00; border-radius: none">
+      <img src="kitchen3.jpg" alt="Slide 1 Clone">
+      </div>
+    </div>
+    <!-- Controls at bottom right -->
+  <div class="controls">
+    <a class="prev">&#10094;</a>
+    <button class="pause-btn">pause</button>
+    <a class="next">&#10095;</a>
+  </div>
+
+  <!-- Dots -->
+  <div class="dots-container">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+  </div>
+  <div class="advertbar" style="background-color: #70c786;">
+    <p class="paragraph">
+      Get & favourite. Outfit here <span>&#8594;</span>
+    </p>
+          <a href="#" style="      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #2c7be5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 20px;
+      transition: background 0.3s;
+      margin-left: 600px;
+      height: 18px;">Bid now</a>
+  </div>
+  <div class="sells-cards" style="display: flex; flex-direction: row; gap: 25px;">
+            <div class="price-card">
+    <img src="c5.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+    <div class="sells-cards" style="display: flex; flex-direction: row; gap: 25px;">
+            <div class="price-card">
+    <img src="cw1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+              <div class="price-card">
+    <img src="c2.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+</div>
+              <div class="price-card">
+    <img src="c3.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+</div>
+      <div class="advertbar" style="background-color: #5281a0;">
+    <p class="paragraph">
+      A place to call home. Make it amazing for your kids <span>&#8594;</span>
+    </p>
+  </div>
+        <div class="sells-cards" style="display: flex; flex-direction: row; gap: 25px;">
+            <div class="price-card">
+    <img src="hs1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+    <div class="sells-cards" style="display: flex; flex-direction: row; gap: 25px;">
+            <div class="price-card">
+    <img src="s1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+              <div class="price-card">
+    <img src="s2.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+</div>
+              <div class="price-card">
+    <img src="h3.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+</div>
+      <div class="advertbar" style="background-color: rgb(187, 141, 55);">
+    <p class="paragraph">
+      Is that a phone!<span>&#128514;</span>
+    </p>
+  </div>
+      <div class="sells-cards" style="display: flex; flex-direction: row; gap: 25px;">
+            <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+    <div class="sells-cards" style="display: flex; flex-direction: row; gap: 25px;">
+            <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+              <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+</div>
+              <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+</div>
+      <div class="advertbar" style="background-color: #934f99;">
+    <p class="paragraph">
+      what is the time!<span>&#129331;</span>
+    </p>
+  </div>
+        <div class="sells-cards" style="display: flex; flex-direction: row; gap: 25px;">
+            <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+    <div class="sells-cards" style="display: flex; flex-direction: row; gap: 25px;">
+            <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+              <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+</div>
+              <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ Get the best shoes from our stores</li>
+      </ul>
+    </div>
+  </div>
+</div>
+          <div class="advertbar" style="background-color: rgb(182, 182, 40);">
+    <p class="paragraph">
+      Don't get stuck. An expert is near you!<span>&#128186;</span>
+    </p>
+  </div>
+  <div class="cardg">
+    <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <h2>Starter Plan</h2>
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ 10 Projects</li>
+        <li>✔ 5 GB Storage</li>
+        <li>✔ Email Support</li>
+      </ul>
+
+      <a href="#" style="      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #2c7be5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;">Get Started</a>
+    </div>
+  </div>
+      <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <h2>Starter Plan</h2>
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ 10 Projects</li>
+        <li>✔ 5 GB Storage</li>
+        <li>✔ Email Support</li>
+      </ul>
+
+      <a href="#" style="      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #2c7be5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;">Get Started</a>
+    </div>
+  </div>
+      <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <h2>Starter Plan</h2>
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ 10 Projects</li>
+        <li>✔ 5 GB Storage</li>
+        <li>✔ Email Support</li>
+      </ul>
+
+      <a href="#" style="      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #2c7be5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;">Get Started</a>
+    </div>
+  </div>
+      <div class="price-card">
+    <img src="shoe1.jpg" alt="Product Image">
+
+    <div class="card-content">
+      <h2>Starter Plan</h2>
+      <p class="price">$19 / month</p>
+
+      <ul class="features">
+        <li>✔ 10 Projects</li>
+        <li>✔ 5 GB Storage</li>
+        <li>✔ Email Support</li>
+      </ul>
+
+      <a href="#" style="      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 20px;
+      background: #2c7be5;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;">Get Started</a>
+    </div>
+  </div>
+</div>
+    <script src="main.js"></script>
+</body>
+</html>
